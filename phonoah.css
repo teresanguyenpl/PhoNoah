@@ -1,6 +1,9 @@
 body {
     background-color: rgba(1, 1, 0, 0.92);
 }
+
+/* Top with name and menu button started here */
+
 .top {
     height: 50rem;
 }
@@ -8,45 +11,92 @@ body {
 .left {
     position: relative;
     float: left;
-    width: 20rem;
+    width: 300px;
     top: 30%;
     filter: drop-shadow(1rem 1rem 1rem #000000);
+    animation: slideInLeft 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        left: -50rem;
+    }
+    to {
+        left: 0;
+    }
 }
 
 .right {
     position: relative;
     float: right;
-    width: 20rem;
+    width: 300px;
     top: 8%;
-    right: 0;
     filter: drop-shadow(0 1rem 1rem #000000);
+    animation: slideInRight 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        right: -50rem;
+    }
+    to {
+        right: 0;
+    }
 }
 
 .right-small {
     display: none;
 }
 
-.top h {
+.top .title {
     position: relative;
+    top: 10%;
+    opacity: 0;
+    animation: appear 2s;
+    animation-fill-mode: forwards;
+}
+
+.top .title h {
     font-family: Merienda;
     font-style: normal;
     font-weight: bold;
     font-size: 10vw;
     text-align: center;
     color: #FFFFFF;
-    top: 12%;
     text-shadow: -0.5rem 0.5rem rgba(107, 72, 40, 0.67);
 }
 
-.top h span {
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.top .title h span {
     display: block;
 }
 
-.top button {
+.top .menu {
+    position: relative;
+    top: 12rem;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    animation: appear 2s;
+    animation-fill-mode: forwards;
+}
+
+.top .menu button {
     position: absolute;
-    cursor: pointer;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
     text-align: center;
     padding: 0.5rem 2.5rem;
     background: rgba(68, 54, 41, 0.67);
@@ -54,22 +104,174 @@ body {
     font-family: Courgette;
     font-size: 3vw;
     border-radius: 30px;
-    top: 75%;
 }
 
-.top button:hover {
+.top .menu button:hover {
     background: rgba(107, 72, 40, 0.67);;
 }
 
+/* Top with name and menu button ended here */
+
+/* Picture started here */
+
 .frame {
     position: relative;
-    top: 8rem;
+    top: 6rem;
     margin: auto;
-    width: 70%;
+    width: 80%;
     height: 30rem;
     border: 2px solid #F6DDB8;
     border-radius: 43px;
     padding: 3rem 1rem;
+    animation: appear 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Picture ended here */
+
+/* Desktop */
+@media screen and (max-width: 2560px) {
+   
+}
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+    .top .title {
+        position: relative;
+        top: 15%;
+    }
+    .top .menu {
+        top: 14rem;
+    }
+    .left {
+        width: 18rem;
+    }
+    .right {
+        width: 18rem;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    .left {
+        display: none;
+    }
+    .right {
+        display: none;
+    }
+    .right-small {
+        display: block;
+        position: absolute;
+        width: 60%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        animation: slideDown 2s;
+        animation-fill-mode: forwards;
+    }
+    .top .title {
+        top: 33%;
+    }
+    .top .title h {
+        font-size: 12vw;
+        text-align: center;
+    }
+    .top .menu {
+        top: 22rem;
+    }
+    @keyframes slideDown {
+        from {
+            top: -50rem;
+        }
+        to {
+            top: 0;
+        }  
+    }
+    .frame {
+        top: 4rem;
+    }
+    
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .right-small {
+        width: 70%;
+    }
+    .top .title {
+        top: 31%;
+    }
+    .top .title h {
+        font-size: 17vw;
+    }
+    .top .menu {
+        top: 22rem;
+    }
+    .top .menu button {
+        font-size: 4vw;
+    }
+    .frame {
+        top: 3rem;
+        height: 25rem;
+        padding: 2rem 1rem;
+        width: 75%;
+    }
+}
+/* Mobile L */
+@media screen and (max-width: 500px) {
+    .right-small {
+        width: 80%;
+    }
+    .top .title {
+        top: 30%;
+    }
+    .top .title h {
+        font-size: 19vw;
+    }
+    .top .menu button {
+        font-size: 5vw;
+    }
+    .frame {
+        top: 1rem;
+        width: 80%;
+        height: 17rem;
+        border: 1px solid #F6DDB8;
+    }
+    .top {
+        height: 48rem;
+    }
+}
+/* Mobile M */
+@media screen and (max-width: 375px) {
+    .top .title {
+        top: 24%;
+    }
+    .top .menu {
+        top: 19rem;
+    }
+    .top {
+        height: 42rem;
+    }
+    .frame {
+        height: 13rem;
+        width: 80%;
+        padding: 1.5rem 1rem;
+    } 
+}
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .top .title {
+        top: 18%;
+    }
+    .top .menu {
+        top: 14rem;
+    }
+    .top {
+        height: 32rem;
+    }
+    .frame {
+        top: 0;
+        height: 10rem;
+    } 
 }
 
 .pho {
@@ -344,67 +546,3 @@ body {
 } */
 
 
-
-
-
-@media screen and (max-width: 1200px) {
-    .left {
-        top: 32%;
-        width: 16rem;
-    }
-    .right {
-        top: 16%;
-        width: 16rem;
-    }
-    .top h {
-        top: 18%;
-    }
-   
-}
-
-@media screen and (max-width: 1024px) {
-    .left {
-        display: none;
-    }
-    .right {
-        display: none;
-    }
-    .right-small {
-        display: block;
-        position: absolute;
-        width: 60%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-        animation: slideDown 2s;
-        animation-fill-mode: forwards;
-    }
-    .top h {
-        top: 30%;
-        font-size: 12.5vw;
-    }
-    .top button {
-        top: 83%;
-    }
-    @keyframes slideDown {
-        from {
-            top: -50rem;
-        }
-        to {
-            top: 0;
-        }
-        
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .right-small {
-        width: 70%;
-    }
-    .top h {
-        top: 30%;
-        font-size: 90px;
-    }
-    .top button {
-        top: 78%;
-    }
-}
