@@ -127,161 +127,18 @@ body {
     animation-fill-mode: forwards;
 }
 
-/* Picture ended here */
-
-/* Desktop */
-@media screen and (max-width: 2560px) {
-   
-}
-
-/* Laptop L */
-@media screen and (max-width: 1440px) {
-    .top .title {
-        position: relative;
-        top: 15%;
-    }
-    .top .menu {
-        top: 14rem;
-    }
-    .left {
-        width: 18rem;
-    }
-    .right {
-        width: 18rem;
-    }
-}
-
-/* Laptop */
-@media screen and (max-width: 1024px) {
-    .left {
-        display: none;
-    }
-    .right {
-        display: none;
-    }
-    .right-small {
-        display: block;
-        position: absolute;
-        width: 60%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-        animation: slideDown 2s;
-        animation-fill-mode: forwards;
-    }
-    .top .title {
-        top: 33%;
-    }
-    .top .title h {
-        font-size: 12vw;
-        text-align: center;
-    }
-    .top .menu {
-        top: 22rem;
-    }
-    @keyframes slideDown {
-        from {
-            top: -50rem;
-        }
-        to {
-            top: 0;
-        }  
-    }
-    .frame {
-        top: 4rem;
-    }
-    
-}
-
-/* Tablet */
-@media screen and (max-width: 768px) {
-    .right-small {
-        width: 70%;
-    }
-    .top .title {
-        top: 31%;
-    }
-    .top .title h {
-        font-size: 17vw;
-    }
-    .top .menu {
-        top: 22rem;
-    }
-    .top .menu button {
-        font-size: 4vw;
-    }
-    .frame {
-        top: 3rem;
-        height: 25rem;
-        padding: 2rem 1rem;
-        width: 75%;
-    }
-}
-/* Mobile L */
-@media screen and (max-width: 500px) {
-    .right-small {
-        width: 80%;
-    }
-    .top .title {
-        top: 30%;
-    }
-    .top .title h {
-        font-size: 19vw;
-    }
-    .top .menu button {
-        font-size: 5vw;
-    }
-    .frame {
-        top: 1rem;
-        width: 80%;
-        height: 17rem;
-        border: 1px solid #F6DDB8;
-    }
-    .top {
-        height: 48rem;
-    }
-}
-/* Mobile M */
-@media screen and (max-width: 375px) {
-    .top .title {
-        top: 24%;
-    }
-    .top .menu {
-        top: 19rem;
-    }
-    .top {
-        height: 42rem;
-    }
-    .frame {
-        height: 13rem;
-        width: 80%;
-        padding: 1.5rem 1rem;
-    } 
-}
-/* Mobile S */
-@media screen and (max-width: 320px) {
-    .top .title {
-        top: 18%;
-    }
-    .top .menu {
-        top: 14rem;
-    }
-    .top {
-        height: 32rem;
-    }
-    .frame {
-        top: 0;
-        height: 10rem;
-    } 
-}
-
 .pho {
     width: 100%;
     height: 100%;
 }
 
+/* Picture ended here */
+
+/* Menu title started here */
+
 .menu-title {
     position: relative;
-    top: 20rem;
+    top: 18rem;
 }
 
 .menu-title h1 {
@@ -297,15 +154,15 @@ body {
     color: #F6DDB8;
 }
 
-.menu {
-    position: relative;
-    top: 22rem;
-}
+/* Menu title ended here */
+
+/* Menu started here */
 
 .menu-choices {
+    position: relative;
+    top: 20rem;
     border-top: 1px dashed #F6DDB8;
     border-bottom: 1px dashed #F6DDB8;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,7 +195,7 @@ body {
 
 .menu-des {
     position: relative;
-    top: 4rem;
+    top: 25rem;
 }
 
 .menu-des .info {
@@ -375,7 +232,7 @@ body {
 }
 
 .info .content {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .info .content h3 {
@@ -394,6 +251,10 @@ body {
     font-size: 2vh;
     color: #ada8a8;
 }
+
+/* Menu ended here */
+
+/* Hour started here */
 
 .hour {
     position: relative;
@@ -470,6 +331,8 @@ body {
     left: 1rem;
 }
 
+/* Hour ended here */
+
 .foot {
     position: relative;
     display: flex;
@@ -530,19 +393,233 @@ body {
 }
 
 
-
-/* .copyright {
-    height: 10rem;
-    background-color: #000000;
-
+/* Desktop */
+@media screen and (max-width: 2560px) {
+   
 }
 
-.copyright p {
-    font-family: Courgette;
-    font-size: 20px;
-    text-align: center;
-    color: #FFFFFF;
-    font-weight: 100;
-} */
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+    .top .title {
+        position: relative;
+        top: 15%;
+    }
+    .top .menu {
+        top: 14rem;
+    }
+    .left {
+        width: 18rem;
+    }
+    .right {
+        width: 18rem;
+    }
+    .menu-title {
+        top: 15rem;
+    }
+    .hour {
+        top: 85rem;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    .left {
+        display: none;
+    }
+    .right {
+        display: none;
+    }
+    .right-small {
+        display: block;
+        position: absolute;
+        width: 60%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        animation: slideDown 2s;
+        animation-fill-mode: forwards;
+    }
+    .top .title {
+        top: 33%;
+    }
+    .top .title h {
+        font-size: 12vw;
+        text-align: center;
+    }
+    .top .menu {
+        top: 22rem;
+    }
+    @keyframes slideDown {
+        from {
+            top: -50rem;
+        }
+        to {
+            top: 0;
+        }  
+    }
+    .frame {
+        top: 4rem;
+    }
+    .menu-title {
+        top: 13rem;
+    }
+    .menu-title h1 {
+        font-size: 8vw;
+    }
+    .hour {
+        top: 85rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .right-small {
+        width: 70%;
+    }
+    .top .title {
+        top: 31%;
+    }
+    .top .title h {
+        font-size: 17vw;
+    }
+    .top .menu {
+        top: 22rem;
+    }
+    .top .menu button {
+        font-size: 4vw;
+    }
+    .frame {
+        top: 3rem;
+        height: 25rem;
+        padding: 2rem 1rem;
+        width: 75%;
+    }
+    .menu-title {
+        top: 10rem;
+    }
+    .menu-title h1 {
+        font-size: 9vw;
+    }
+    .menu-choices {
+        top: 15rem;
+    }
+    .menu-button {
+        font-size: 3vw;
+    }
+    .menu-des {
+        top: 20rem;
+    }
+    
+}
+/* Mobile L */
+@media screen and (max-width: 500px) {
+    .right-small {
+        width: 80%;
+    }
+    .top .title {
+        top: 30%;
+    }
+    .top .title h {
+        font-size: 19vw;
+    }
+    .top .menu button {
+        font-size: 5vw;
+    }
+    .frame {
+        top: 1rem;
+        width: 80%;
+        height: 17rem;
+        border: 1px solid #F6DDB8;
+    }
+    .top {
+        height: 48rem;
+    }
+    .menu-title {
+        top: 9rem;
+    }
+    .menu-title h1 {
+        font-size: 10vw;
+    }
+    .menu-choices {
+        top: 13rem;
+    }
+    .menu-button {
+        font-size: 3vw;
+    }
+    .menu-des {
+        top: 16rem;
+    }
+    .info .menu-image img {
+        width: 24rem;
+    }
+}
+/* Mobile M */
+@media screen and (max-width: 375px) {
+    .top .title {
+        top: 24%;
+    }
+    .top .menu {
+        top: 19rem;
+    }
+    .top .menu button {
+        font-size: 7vw;
+    }
+    .top {
+        height: 40rem;
+    }
+    .frame {
+        height: 13rem;
+        width: 80%;
+        padding: 1.5rem 1rem;
+    } 
+    .menu-title {
+        top: 7rem;
+    }
+    .menu-choices {
+        top: 12rem;
+    }
+    .menu-title h1 {
+        font-size: 10vw;
+    }
+    .menu-button {
+        font-size: 4vw;
+    }
+    .menu-des {
+        top: 14rem;
+    }
+    .info .menu-image img {
+        width: 18rem;
+    }
+}
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .top .title {
+        top: 20%;
+    }
+    .top .menu {
+        top: 12rem;
+    }
+    .top {
+        height: 30rem;
+    }
+    .frame {
+        top: 0;
+        height: 10rem;
+    } 
+    .menu-title {
+        top: 5rem;
+    }
+    .menu-title h1 {
+        font-size: 11vw;
+    }
+    .menu-choices {
+        top: 10rem;
+    }
+    .menu-des {
+        top: 13rem;
+    }
+    .info .menu-image img {
+        width: 14em;
+    }
+}
 
 
