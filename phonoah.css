@@ -292,6 +292,7 @@ body {
     top: 8.5rem;
 }
 
+
 .price {
     position: absolute;
     margin-left: auto;
@@ -417,7 +418,7 @@ body {
         top: 15rem;
     }
     .hour {
-        top: 85rem;
+        top: 90rem;
     }
 }
 
@@ -468,6 +469,9 @@ body {
     .hour {
         top: 85rem;
     }
+    .hour .back-2 {
+        display: none;
+    } 
 }
 
 /* Tablet */
@@ -508,7 +512,9 @@ body {
     .menu-des {
         top: 20rem;
     }
-    
+    .hour {
+        top: 75rem;
+    }
 }
 /* Mobile L */
 @media screen and (max-width: 500px) {
@@ -550,6 +556,29 @@ body {
     }
     .info .menu-image img {
         width: 24rem;
+    }
+    .hour {
+        top: 70rem;
+    }
+  
+   
+    
+    .price h3 {
+        font-family: Courgette;
+        font-size: 55px;
+        text-align: center;
+        color: #C7F8A1;
+    }
+    
+    .price p {
+        position: relative;
+        font-family: 'Cormorant Upright';
+        font-size: 33px;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 6px;
+        top: -3rem;
+        left: 1rem;
     }
 }
 /* Mobile M */
