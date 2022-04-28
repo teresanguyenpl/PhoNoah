@@ -292,7 +292,6 @@ body {
     top: 8.5rem;
 }
 
-
 .price {
     position: absolute;
     margin-left: auto;
@@ -467,7 +466,7 @@ body {
         font-size: 8vw;
     }
     .hour {
-        top: 85rem;
+        top: 80rem;
     }
     .hour .back-2 {
         display: none;
@@ -528,11 +527,11 @@ body {
         font-size: 19vw;
     }
     .top .menu button {
-        font-size: 5vw;
+        font-size: 7vw;
     }
     .frame {
         top: 1rem;
-        width: 80%;
+        width: 90%;
         height: 17rem;
         border: 1px solid #F6DDB8;
     }
@@ -543,29 +542,54 @@ body {
         top: 9rem;
     }
     .menu-title h1 {
-        font-size: 10vw;
+        font-size: 12vw;
     }
     .menu-choices {
         top: 13rem;
     }
     .menu-button {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .menu-des {
         top: 16rem;
     }
     .info .menu-image img {
-        width: 24rem;
+        width: 20rem;
     }
     .hour {
-        top: 70rem;
+        top: 65rem;
     }
   
-   
+    .back-1 {
+        display: none;
+    }
+
+    .info .content h3 {
+        font-size: 3vh;
+    }
+    
+    .info .content p {
+        font-size: 2vh;
+    }
+
+    .border {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(250, 186, 128, 0.56);
+        opacity: 0.3;
+        top: 10rem;
+    }
+
+    .price{
+        width: 280px;
+    }
     
     .price h3 {
         font-family: Courgette;
-        font-size: 55px;
+        font-size: 50px;
         text-align: center;
         color: #C7F8A1;
     }
@@ -573,12 +597,11 @@ body {
     .price p {
         position: relative;
         font-family: 'Cormorant Upright';
-        font-size: 33px;
+        font-size: 28px;
         text-align: center;
         color: #FFFFFF;
         line-height: 6px;
         top: -3rem;
-        left: 1rem;
     }
 }
 /* Mobile M */
@@ -618,6 +641,39 @@ body {
     .info .menu-image img {
         width: 18rem;
     }
+    .hour {
+        top: 60rem;
+    }
+    .border {
+        width: 250px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(250, 186, 128, 0.56);
+        opacity: 0.2;
+        top: 1.3rem;
+    }
+
+    .price{
+        top: 0rem;
+    }
+    
+    .price h3 {
+        font-family: Courgette;
+        font-size: 40px;
+        text-align: center;
+        color: #C7F8A1;
+    }
+    
+    .price p {
+        position: relative;
+        font-family: 'Cormorant Upright';
+        font-size: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 6px;
+        top: -3rem;
+    }
 }
 /* Mobile S */
 @media screen and (max-width: 320px) {
@@ -648,6 +704,9 @@ body {
     }
     .info .menu-image img {
         width: 14em;
+    }
+    .hour {
+        top: 53rem;
     }
 }
 
