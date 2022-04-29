@@ -392,12 +392,6 @@ body {
     border-radius: 45px;
 }
 
-
-/* Desktop */
-@media screen and (max-width: 2560px) {
-   
-}
-
 /* Laptop L */
 @media screen and (max-width: 1440px) {
     .top .title {
@@ -417,7 +411,10 @@ body {
         top: 15rem;
     }
     .hour {
-        top: 90rem;
+        top: 85rem;
+    }
+    .foot {
+        top: 160rem;
     }
 }
 
@@ -471,6 +468,37 @@ body {
     .hour .back-2 {
         display: none;
     } 
+    .foot { 
+        height: 30rem;
+        top: 138rem;
+    }
+    
+    .foot .column {
+        padding: 1rem;
+    }
+    
+    .foot .column p1 {
+        font-size: 25px;
+    }
+    
+    .foot .column p {
+        font-size: 25px;
+    }
+    
+    .deliver .doordash {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .deliver .uber {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .column iframe {
+        width: 330px;
+        height: 330px;
+    }
 }
 
 /* Tablet */
@@ -513,6 +541,42 @@ body {
     }
     .hour {
         top: 75rem;
+    }
+    
+    .foot { 
+        height: 30rem;
+        top: 130rem;
+    }
+    
+    .foot .column {
+        float: none;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    
+    .foot .column p1 {
+        font-size: 22px;
+    }
+    
+    .foot .column p {
+        font-size: 22px;
+    }
+    
+    .deliver .doordash {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .deliver .uber {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .column iframe {
+        width: 300px;
+        height: 300px;
+        filter: invert(100%) drop-shadow(30px 30px 5px rgba(0, 0, 0, 0.25));
+
     }
 }
 /* Mobile L */
@@ -602,6 +666,39 @@ body {
         color: #FFFFFF;
         line-height: 6px;
         top: -3rem;
+    }
+
+    .foot { 
+        background-color: #000000;
+        height: 30rem;
+        top: 138rem;
+    }
+    
+    .foot .column {
+        padding: 1rem;
+    }
+    
+    .foot .column p1 {
+        font-size: 25px;
+    }
+    
+    .foot .column p {
+        font-size: 25px;
+    }
+    
+    .deliver .doordash {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .deliver .uber {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .column iframe {
+        width: 350px;
+        height: 350px;
     }
 }
 /* Mobile M */
