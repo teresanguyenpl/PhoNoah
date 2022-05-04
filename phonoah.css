@@ -1,5 +1,6 @@
 body {
-    background-color: rgba(1, 1, 0, 0.92);
+    background-color: #141414;
+    ;
 }
 
 /* Top with name and menu button started here */
@@ -331,6 +332,10 @@ body {
     left: 1rem;
 }
 
+hr {
+    display: none;
+}
+
 /* Hour ended here */
 
 .foot {
@@ -463,7 +468,7 @@ body {
         font-size: 8vw;
     }
     .hour {
-        top: 80rem;
+        top: 88rem;
     }
     .hour .back-2 {
         display: none;
@@ -549,9 +554,7 @@ body {
     }
     
     .foot .column {
-        float: none;
-        width: 100%;
-        padding: 0.5rem;
+        padding: 1rem;
     }
     
     .foot .column p1 {
@@ -563,18 +566,18 @@ body {
     }
     
     .deliver .doordash {
-        width: 110px;
-        height: 110px;
-    }
-    
-    .deliver .uber {
         width: 90px;
         height: 90px;
     }
     
+    .deliver .uber {
+        width: 70px;
+        height: 70px;
+    }
+    
     .column iframe {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         filter: invert(100%) drop-shadow(30px 30px 5px rgba(0, 0, 0, 0.25));
 
     }
@@ -668,37 +671,50 @@ body {
         top: -3rem;
     }
 
+    hr {
+        position: relative;
+        display: block;
+        top: 88rem;
+    }
+
     .foot { 
-        background-color: #000000;
+        display: block;
         height: 30rem;
-        top: 138rem;
+        top: 90rem;
+        background-color: #141414;
     }
     
-    .foot .column {
-        padding: 1rem;
+    .foot .column { 
+        float: none;
+        width: 100%;   
+        padding: 0rem;
     }
+
     
     .foot .column p1 {
-        font-size: 25px;
+        font-size: 22px;
+        color: #64b153;
     }
     
     .foot .column p {
-        font-size: 25px;
+        font-size: 22px;
+        color: #C3B49D;
     }
     
     .deliver .doordash {
-        width: 130px;
-        height: 130px;
+        width: 90px;
+        height: 90px;
     }
     
     .deliver .uber {
-        width: 110px;
-        height: 110px;
+        width: 70px;
+        height: 70px;
     }
     
     .column iframe {
-        width: 350px;
-        height: 350px;
+        width: 90%;
+        height: 220px;
+        filter: brightness();
     }
 }
 /* Mobile M */
@@ -771,6 +787,15 @@ body {
         line-height: 6px;
         top: -3rem;
     }
+    hr {
+        top: 75rem;
+    }
+
+    .foot { 
+        display: block;
+        height: 30rem;
+        top: 78rem;
+    }
 }
 /* Mobile S */
 @media screen and (max-width: 320px) {
@@ -804,6 +829,61 @@ body {
     }
     .hour {
         top: 53rem;
+    }
+
+    .border {
+        width: 200px;
+        height: 250px;
+        top: 2rem;
+        text-align: center;
+    }
+
+    .price {
+        width: 200px;
+    }
+
+    .price h3 {
+        position: relative;
+        top: 0.5rem;
+        font-size: 32px;
+    }
+    
+    .price p {
+        font-size: 18px;
+        line-height: 6px;
+        top: -1rem;
+    }
+
+    hr {
+        top: 65rem;
+    }
+
+    .foot { 
+        top: 67rem;
+    }
+   
+    .foot .column p1 {
+        font-size: 18px;
+    }
+    
+    .foot .column p {
+        font-size: 18px;
+    }
+    
+    .deliver .doordash {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .deliver .uber {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .column iframe {
+        width: 90%;
+        height: 220px;
+        filter: brightness();
     }
 }
 
